@@ -1,3 +1,9 @@
+info:
+  app:
+    name: ${spring.application.name}
+  build:
+    artifactId: '@project.artifact@'
+  
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/test
@@ -11,4 +17,14 @@ spring:
   application:
     name: cibil-score-service
     
-        
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+  info:
+    env:
+      enabled: true
+      
+      

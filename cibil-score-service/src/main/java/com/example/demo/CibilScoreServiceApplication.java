@@ -28,10 +28,11 @@ public class CibilScoreServiceApplication {
 	}
 
 	@Bean
-	BCryptPasswordEncoder encoder() {
+	public BCryptPasswordEncoder encoder() {
 		return new BCryptPasswordEncoder();
 	}
 
+	
 	@Bean
 	public CommandLineRunner runner() {
 		

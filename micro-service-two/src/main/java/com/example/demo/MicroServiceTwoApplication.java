@@ -34,8 +34,12 @@ public class MicroServiceTwoApplication {
 	public RestTemplate template() {
 		
 		
-         
-		return new RestTemplate();
+        RestTemplate template = new RestTemplate(); 
+        
+          template.getInterceptors()
+              .add(new BasicAuthenticationInterceptor("india","india"));
+          
+		return template;
 	}
 
 	
