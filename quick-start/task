@@ -1,0 +1,10 @@
+
+Create a Java Class Book  with few props
+
+Create a Service BookServiceImplOne with a method that takes var args  and return an list of 
+books whose cost is more than 500 
+Create a Service BookServiceImplTwo with a method that takes list of books and return a
+list of books cost is less than 500
+
+Swap the implementation of BookService in the Service class using DI and observe
+

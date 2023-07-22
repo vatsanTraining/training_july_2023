@@ -1,0 +1,55 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: srivatsan
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+       ddl-auto: update
+  config:
+    activate:
+      on-profile:
+      - dev
+#     gging:
+##  level:
+##    '[org.hibernate.type.descriptor.sql]': trace
+##    '[org.hibernate]': trace
+
+server:
+  port: 4040
+    
+logging:
+  level:
+    '[org.springframework.boot]': INFO
+              
+---
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: srivatsan
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+       ddl-auto: update
+  config:
+    activate:
+      on-profile:
+      - test
+#     gging:
+##  level:
+##    '[org.hibernate.type.descriptor.sql]': trace
+##    '[org.hibernate]': trace
+
+server:
+  port: 5050
+    
+logging:
+  level:
+    '[org.springframework.boot]': debug
+       
+       
